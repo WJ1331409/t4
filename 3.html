@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<!-- <div ng-controller="myctr1">
+	<p>i的値：{{i}}</p>
+</div> -->
+
+
+<div ng-controller="myctr2">
+	<p><input type="text" ng-mode="username"></p>
+	<p>Hello {{username}}</p>
+</div>
+
+
+
+<script src="angular.min.js"></script>
+<script>
+	/*var i=5;
+	document.write("i的値："+i)
+	var test=window.setInterval(function(){
+		i++;
+		console.log("i:"+i)
+		if(i==10){
+			clearInterval(test)
+		}
+	},1000)*/
+/*var app=angular.module("myapp",[]);
+app.controller("myctrl",function($scope,$interval){
+	$scope.i=2;
+	var t=$interval(function(){
+		$scope.i++;
+		console.log("i:"+$scope.i)
+		
+	},1000)
+
+})*/
+ 
+	var app=angular.module("myapp",[]);
+	app.controller("myctr2",function($scope){
+		$scope.username="wujie";
+	})
+
+
+
+</script>
+
+
+
+</body>
+</html>
